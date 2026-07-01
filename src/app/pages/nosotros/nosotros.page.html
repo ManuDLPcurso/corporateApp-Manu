@@ -10,4 +10,20 @@
       <ion-title size="large">nosotros</ion-title>
     </ion-toolbar>
   </ion-header>
+<br><br>
+  <ion-button (click)="obtenerUbicacion()">
+Obtener ubicación
+</ion-button>
+<p>Lat: {{ actualLat }} - Lng: {{ actualLon }} - Dist: {{ distancia }}
+</p>
+
+ <ion-button (click)="(distanciaTotal())">
+Distancia Total
+</ion-button>
+<p>Dist: {{ distancia }}
+</p>
+
+ 
+
+
 </ion-content>
