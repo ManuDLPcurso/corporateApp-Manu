@@ -4,6 +4,7 @@
 "nombre": "Portátil Dell",
 "unidades": 12,
 "precio": 1200,
+"disponible": true,
 "foto": "assets/images/dell.jpg"
 },
 {
@@ -11,6 +12,7 @@
 "nombre": "Monitor LG",
 "unidades": 8,
 "precio": 299,
+"disponible": true,
 "foto": "assets/images/lg.jpg"
 },
 {
@@ -18,6 +20,7 @@
 "nombre": "Telefono Xiaomi",
 "unidades": 8,
 "precio": 500,
+"disponible": true,
 "foto": "assets/images/xiaomi.jpg"
 }
 ]
