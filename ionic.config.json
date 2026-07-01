@@ -1,0 +1,7 @@
+{
+  "name": "corporateApp-Manu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
