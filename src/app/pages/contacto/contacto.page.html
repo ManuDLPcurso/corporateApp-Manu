@@ -14,12 +14,24 @@
 <ion-item>
   <ion-input name='correo' [(ngModel)]="correo" placeholder="Correo"></ion-input>
 
-  <ion-item>
-  <ion-textarea name='mensaje' [(ngModel)]="mensaje"></ion-textarea>
-          
+<ion-item>
+  <ion-textarea name='mensaje' [(ngModel)]="mensaje" placeholder="Mensaje"></ion-textarea>          
 </ion-item>
+
+<br>
+
 <ion-button (click)="enviar()">
   Enviar
 </ion-button>
 
+<ion-button (click)="guardar()">
+  Guardar
+</ion-button>
 
+<ion-button (click)="leer()">
+  Leer
+</ion-button>
+
+<ion-button (click)="consultar()">
+  Consultar
+</ion-button>

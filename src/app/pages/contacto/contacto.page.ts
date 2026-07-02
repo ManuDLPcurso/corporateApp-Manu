@@ -19,29 +19,30 @@ export class ContactoPage implements OnInit {
 correo:string="";
 mensaje:string="";
 
-constructor(private messagesService:MessagesService) {
-  async guardar() {
-await this.messagesService.guardarDato(this.correo, this.mensaje);
-}
-async leer() {
-correo = await this.messagesService.obtenerDato(this.correo);
-}
-}
+constructor(private messagesService:MessagesService){} 
+
+
+ngOnInit() {}
 
 async enviar(){
-await Preferences.set({
-  key: 'ultimoMensaje',
-  value: JSON.stringify({
-  correo:this.correo,
-  mensaje:this.mensaje
-})
-})
-}
+  this.messagesService.guardarMensaje(this.correo,this.mensaje)  
+};
+
+guardar(){
+  this.messagesService.guardarMensaje(this.correo,this.mensaje)
+  console.log(this.correo,this.mensaje)
+};
+
+leer(){
+  this.messagesService.leerMensaje()
+};
+
+consultar(){
+  this.messagesService.consultarPlataforma(this.correo,this.mensaje)
+};
 
 
+ }
 
 
- ngOnInit() {}
-
-}
 
